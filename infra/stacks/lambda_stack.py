@@ -1,3 +1,4 @@
+from functions.hello_world.config import HelloWorldConfig
 from docs.config import DocsConfig
 from aws_cdk import Stack
 from constructs import Construct
@@ -16,3 +17,6 @@ class LambdaStack(Stack):
 
         # Docs
         DocsConfig(self.services)
+
+        # HelloWorld
+        HelloWorldConfig(self.services)
